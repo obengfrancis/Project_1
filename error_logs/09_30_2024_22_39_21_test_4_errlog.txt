@@ -1,0 +1,14 @@
+Evaluating: 30 88 1 11 + 85 96 / + 42 + 34 - +  -
+Traceback (most recent call last):
+  File "/Users/francisobeng/Developer/CS5314/Projects/project1/p1.py", line 113, in <module>
+    main()
+  File "/Users/francisobeng/Developer/CS5314/Projects/project1/p1.py", line 38, in main
+    f.write('\n'.join(output_lines))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/francisobeng/Developer/CS5314/Projects/project1/p1.py", line 33, in <lambda>
+    output_lines = map(lambda x: evaluate(x).strip(), lines)
+                                 ^^^^^^^^^^^
+  File "/Users/francisobeng/Developer/CS5314/Projects/project1/p1.py", line 65, in evaluate
+    result = operand_1 + operand_2
+             ^^^^^^^^^
+NameError: name 'operand_1' is not defined. Did you mean: 'operand1'?
